@@ -1,0 +1,22 @@
+<server description="Sample Liberty server">
+	<featureManager>
+	
+		<!-- KO when full JEE : here below -->
+		<!-- <feature>javaee-7.0</feature> -->  
+		
+		
+		<!-- OK when only : here below -->
+        <feature>jaxrs-2.0</feature>
+        <feature>ejb-3.2</feature>
+        <feature>cdi-1.2</feature>
+        <feature>ejbRemote-3.2</feature>
+        <feature>jndi-1.0</feature>
+	
+	</featureManager>
+
+	<logging traceSpecification="org.jboss.weld.*=INFO" />
+
+	<iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809" iiopsPort="2810"/>
+
+	<!-- <webApplication location="remo-ejb.war" contextRoot="/" /> -->
+</server>
